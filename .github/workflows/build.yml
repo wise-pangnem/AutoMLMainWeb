@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: AWS CLI 설치
         uses: unfor19/install-aws-cli-action@master
+        with:
+          version: 1
       - name: AWS HELP 명령어 테스트
         run: aws ecs help
       - name: ECS 배포 테스트
